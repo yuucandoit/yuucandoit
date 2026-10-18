@@ -1,0 +1,196 @@
+:root,
+[data-theme="dark"] {
+  --bg-primary: #0f1115;
+  --bg-elevated: #121316;
+  --bg-surface: #181a20;
+  --bg-surface-hover: #1e2129;
+  --border-subtle: #262933;
+  --border-control: #6b7280;
+  --text-primary: #f3f4f6;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+  --accent-primary: #34d399;
+  --accent-ink: #0f1115;
+  --accent-surface: rgba(52, 211, 153, 0.12);
+  --danger-text: #fca5a5;
+  --danger-border: #f87171;
+  --danger-surface: rgba(248, 113, 113, 0.12);
+}
+
+[data-theme="light"] {
+  --bg-primary: #f3f2ee;
+  --bg-elevated: #eae8e2;
+  --bg-surface: #e6e4dd;
+  --bg-surface-hover: #dcd9d0;
+  --border-subtle: #c8c5bc;
+  --border-control: #57534e;
+  --text-primary: #181a20;
+  --text-secondary: #262933;
+  --text-muted: #4b5563;
+  --accent-primary: #065f46;
+  --accent-ink: #f3f2ee;
+  --accent-surface: rgba(6, 95, 70, 0.1);
+  --danger-text: #991b1b;
+  --danger-border: #b91c1c;
+  --danger-surface: rgba(185, 28, 28, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 150ms ease-out, color 150ms ease-out;
+}
+
+.font-mono-tech {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.hero-title {
+  font-size: clamp(1.875rem, 3.8vw + 0.75rem, 3.125rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.section-title {
+  font-size: clamp(1.375rem, 2.2vw + 0.5rem, 2rem);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+.surface-panel {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  transition: border-color 150ms ease-out, background-color 150ms ease-out;
+}
+
+.surface-panel-interactive:hover {
+  border-color: var(--border-control);
+}
+
+.surface-elevated {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+}
+
+.control-interactive {
+  min-height: 44px;
+  min-width: 44px;
+  border: 1px solid var(--border-control);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  transition: border-color 150ms ease-out, background-color 150ms ease-out, opacity 150ms ease-out;
+}
+
+.control-interactive:hover {
+  background-color: var(--bg-surface-hover);
+  border-color: var(--accent-primary);
+}
+
+.control-interactive:active {
+  opacity: 0.88;
+}
+
+.control-primary {
+  min-height: 44px;
+  background-color: var(--accent-primary);
+  color: var(--accent-ink);
+  border: 1px solid var(--accent-primary);
+  font-weight: 600;
+  transition: opacity 150ms ease-out, border-color 150ms ease-out;
+}
+
+.control-primary:hover {
+  opacity: 0.9;
+}
+
+.control-primary:active {
+  opacity: 0.82;
+}
+
+.filter-tab[aria-selected="true"] {
+  background-color: var(--accent-surface);
+  border-color: var(--accent-primary);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.8125rem;
+  line-height: 1.3;
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  border-radius: 2px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: var(--accent-primary);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.error-banner {
+  background-color: var(--danger-surface);
+  border: 1px solid var(--danger-border);
+  color: var(--danger-text);
+}
+
+/* Keyboard focus indicator meeting >= 3:1 non-text contrast */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background-color: var(--accent-primary);
+  color: var(--accent-ink);
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
+

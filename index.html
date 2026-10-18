@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wahyu Sanjaya | Software Engineer &amp; QA Engineer</title>
+  <meta name="description" content="Engineering portfolio of Wahyu Sanjaya, Software Engineer and Quality Assurance Engineer based in Jakarta, Indonesia. Focused on Laravel, Go, FastAPI, Ionic/Angular hybrid applications, and server infrastructure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex flex-col">
+  <a href="#main-content" class="skip-link font-mono-tech text-sm">Skip to main content</a>
+
+  <header class="sticky top-0 z-40 border-b" style="background-color: var(--bg-primary); border-color: var(--border-subtle);">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="inline-flex items-center gap-2.5 py-2 rounded font-semibold tracking-tight text-base sm:text-lg">
+        <span>Yuu Can Do It !</span>
+      </a>
+
+      <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-1 lg:gap-2">
+        <a href="#projects" class="px-3 py-2.5 rounded text-sm font-medium inline-flex items-center min-h-[44px]" style="color: var(--text-secondary);">Projects</a>
+        <a href="#stack" class="px-3 py-2.5 rounded text-sm font-medium inline-flex items-center min-h-[44px]" style="color: var(--text-secondary);">Tech Stack</a>
+        <a href="#experience" class="px-3 py-2.5 rounded text-sm font-medium inline-flex items-center min-h-[44px]" style="color: var(--text-secondary);">Experience</a>
+        <a href="#education" class="px-3 py-2.5 rounded text-sm font-medium inline-flex items-center min-h-[44px]" style="color: var(--text-secondary);">Education</a>
+        <a href="#contact" class="px-3 py-2.5 rounded text-sm font-medium inline-flex items-center min-h-[44px]" style="color: var(--text-secondary);">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button
+          type="button"
+          id="theme-toggle"
+          aria-pressed="false"
+          class="control-interactive px-3 py-2 rounded font-mono-tech text-xs inline-flex items-center justify-center"
+        >
+          <span id="theme-toggle-label">Theme: Dark</span>
+        </button>
+
+        <a
+          href="cv/Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden sm:inline-flex control-interactive px-3.5 py-2 rounded font-mono-tech text-xs items-center justify-center font-medium"
+        >
+          Resume.pdf
+        </a>
+
+        <button
+          type="button"
+          id="mobile-menu-btn"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          class="md:hidden control-interactive px-3 py-2 rounded font-mono-tech text-xs inline-flex items-center justify-center"
+        >
+          <span id="mobile-menu-label">Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <nav
+      id="mobile-nav"
+      aria-label="Mobile Navigation"
+      class="hidden md:hidden border-t px-4 py-3 space-y-1"
+      style="background-color: var(--bg-elevated); border-color: var(--border-subtle);"
+    >
+      <a href="#projects" class="block px-3 py-3 rounded text-sm font-medium min-h-[44px]">01 / Featured Projects</a>
+      <a href="#stack" class="block px-3 py-3 rounded text-sm font-medium min-h-[44px]">02 / Technical Stack</a>
+      <a href="#experience" class="block px-3 py-3 rounded text-sm font-medium min-h-[44px]">03 / Work Experience</a>
+      <a href="#education" class="block px-3 py-3 rounded text-sm font-medium min-h-[44px]">04 / Education &amp; Focus</a>
+      <a href="#contact" class="block px-3 py-3 rounded text-sm font-medium min-h-[44px]">05 / Direct Contact</a>
+      <a
+        href="cv/Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block px-3 py-3 rounded font-mono-tech text-xs font-medium min-h-[44px]"
+        style="color: var(--accent-primary);"
+      >
+        Open Resume PDF (cv/Resume.pdf)
+      </a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="flex-1">
+    <section id="top" class="py-10 sm:py-16 lg:py-20 border-b" style="border-color: var(--border-subtle);">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+          <div class="lg:col-span-7">
+            <h1 class="hero-title font-bold mb-5">
+              Wahyu Sanjaya: Software Engineer &amp; Quality Assurance Engineer.
+            </h1>
+            <p class="text-base sm:text-lg mb-6" style="color: var(--text-secondary);">
+              Maintaining and scaling enterprise back-end architectures in PHP (Laravel), building RESTful APIs with Go and Python (FastAPI), and shipping cross-platform hybrid mobile and web applications with Ionic and Angular. Experienced in autonomous server deployments via Nginx reverse proxies, staging performance audits, and PostgreSQL/MySQL database optimization.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3">
+              <a
+                href="#projects"
+                class="control-primary px-5 py-3 rounded text-sm inline-flex items-center justify-center"
+              >
+                Inspect Project Case-Notes
+              </a>
+              <a
+                href="cv/Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="control-interactive px-5 py-3 rounded text-sm font-medium inline-flex items-center justify-center"
+              >
+                Download Resume PDF
+              </a>
+              <a
+                href="#contact"
+                class="control-interactive px-4 py-3 rounded text-sm font-medium inline-flex items-center justify-center"
+              >
+                Contact via Email
+              </a>
+            </div>
+          </div>
+
+          <aside class="lg:col-span-5 surface-panel rounded-md p-5 sm:p-6" aria-label="Engineer Profile Summary">
+            <div class="flex items-center justify-between pb-3 mb-4 border-b" style="border-color: var(--border-subtle);">
+              <h2 class="text-sm font-semibold tracking-wide">Engineer Profile</h2>
+              <span class="font-mono-tech text-xs" style="color: var(--text-muted);">Jakarta, Indonesia</span>
+            </div>
+
+            <div class="surface-elevated rounded p-4 mb-4 flex items-center gap-4">
+              <div class="w-16 h-16 rounded overflow-hidden shrink-0" style="background-color: var(--bg-surface); border: 1px solid var(--border-control);">
+                <img
+                  src="photo-profile/me.jpeg"
+                  alt="Wahyu Sanjaya"
+                  class="w-full h-full object-cover"
+                  width="64"
+                  height="64"
+                >
+              </div>
+              <div class="min-w-0 flex-1">
+                <p class="text-base font-semibold leading-tight">Wahyu Sanjaya</p>
+                <p class="text-xs mt-1" style="color: var(--text-secondary);">Software Engineer / QA Engineer</p>
+                <p class="font-mono-tech text-xs mt-1" style="color: var(--text-muted);">PT Solusi Intek Indonesia</p>
+              </div>
+            </div>
+
+            <dl class="space-y-3 text-sm">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-1 py-1.5 border-b" style="border-color: var(--border-subtle);">
+                <dt class="font-mono-tech text-xs" style="color: var(--text-muted);">CURRENT ROLE</dt>
+                <dd class="sm:col-span-2 font-medium">Software Engineer / QA Engineer</dd>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-1 py-1.5 border-b" style="border-color: var(--border-subtle);">
+                <dt class="font-mono-tech text-xs" style="color: var(--text-muted);">COMPANY</dt>
+                <dd class="sm:col-span-2" style="color: var(--text-secondary);">PT Solusi Intek Indonesia (May 2022 - Present)</dd>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-1 py-1.5 border-b" style="border-color: var(--border-subtle);">
+                <dt class="font-mono-tech text-xs" style="color: var(--text-muted);">LOCATION</dt>
+                <dd class="sm:col-span-2" style="color: var(--text-secondary);">Jakarta, Indonesia</dd>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-1 py-1.5 border-b" style="border-color: var(--border-subtle);">
+                <dt class="font-mono-tech text-xs" style="color: var(--text-muted);">EDUCATION</dt>
+                <dd class="sm:col-span-2" style="color: var(--text-secondary);">B.Sc. Informatics Engineering, Universitas Indraprasta PGRI</dd>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-1 pt-1.5">
+                <dt class="font-mono-tech text-xs" style="color: var(--text-muted);">PROFILES</dt>
+                <dd class="sm:col-span-2 flex flex-wrap gap-3 font-mono-tech text-xs">
+                  <a href="https://github.com/wahyusnjy" target="_blank" rel="noopener noreferrer" class="underline py-1" style="color: var(--accent-primary);">github.com/wahyusnjy</a>
+                  <a href="https://linkedin.com/in/wahyu-sanjaya-a747ba223" target="_blank" rel="noopener noreferrer" class="underline py-1" style="color: var(--accent-primary);">LinkedIn</a>
+                  <a href="https://wahyusnjy.github.io" target="_blank" rel="noopener noreferrer" class="underline py-1" style="color: var(--accent-primary);">wahyusnjy.github.io</a>
+                </dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-12 sm:py-16 border-b" style="border-color: var(--border-subtle);">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+          <div>
+            <p class="font-mono-tech text-xs mb-2" style="color: var(--accent-primary);">[01 / FEATURED CASE-NOTES]</p>
+            <h2 class="section-title font-bold">Architecture &amp; Project Case-Notes</h2>
+          </div>
+          <p id="projects-count" class="font-mono-tech text-xs" style="color: var(--text-muted);">
+            SHOWING 2 OF 2 PROJECTS
+          </p>
+        </div>
+
+        <div class="surface-panel rounded-md p-4 mb-6 space-y-4">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div role="tablist" aria-label="Filter projects by category" class="flex flex-wrap gap-2">
+              <button
+                type="button"
+                role="tab"
+                aria-selected="true"
+                data-category="all"
+                class="filter-tab control-interactive px-3.5 py-2 rounded font-mono-tech text-xs"
+              >
+                All Projects (2)
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-category="fullstack"
+                class="filter-tab control-interactive px-3.5 py-2 rounded font-mono-tech text-xs"
+              >
+                Full-Stack / API (1)
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-category="release-qa"
+                class="filter-tab control-interactive px-3.5 py-2 rounded font-mono-tech text-xs"
+              >
+                Release &amp; QA (1)
+              </button>
+            </div>
+
+            <div class="w-full lg:w-72">
+              <label for="project-search" class="sr-only">Search project keywords or stack</label>
+              <input
+                type="search"
+                id="project-search"
+                placeholder="Filter by stack (e.g. Laravel, SQL)..."
+                class="w-full min-h-[44px] px-3.5 py-2 rounded text-sm font-mono-tech"
+                style="background-color: var(--bg-elevated); border: 1px solid var(--border-control); color: var(--text-primary);"
+              >
+            </div>
+          </div>
+
+          <div class="pt-3 border-t flex flex-wrap items-center justify-between gap-2" style="border-color: var(--border-subtle);">
+            <span class="font-mono-tech text-xs" style="color: var(--text-muted);">
+              UI STATE INSPECTOR (R-27 VERIFICATION):
+            </span>
+            <div class="flex flex-wrap gap-2">
+              <button
+                type="button"
+                data-state-trigger="ready"
+                aria-pressed="true"
+                class="control-interactive px-3 py-1.5 rounded font-mono-tech text-xs"
+              >
+                Active Data
+              </button>
+              <button
+                type="button"
+                data-state-trigger="empty"
+                aria-pressed="false"
+                class="control-interactive px-3 py-1.5 rounded font-mono-tech text-xs"
+              >
+                Empty State
+              </button>
+              <button
+                type="button"
+                data-state-trigger="loading"
+                aria-pressed="false"
+                class="control-interactive px-3 py-1.5 rounded font-mono-tech text-xs"
+              >
+                Loading State
+              </button>
+              <button
+                type="button"
+                data-state-trigger="error"
+                aria-pressed="false"
+                class="control-interactive px-3 py-1.5 rounded font-mono-tech text-xs"
+              >
+                Error State
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="projects-container" class="space-y-6"></div>
+      </div>
+    </section>
+
+    <section id="stack" class="py-12 sm:py-16 border-b" style="border-color: var(--border-subtle);">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-8">
+          <p class="font-mono-tech text-xs mb-2" style="color: var(--accent-primary);">[02 / MODULAR STACK PANEL]</p>
+          <h2 class="section-title font-bold mb-2">Technical Stack &amp; Infrastructure</h2>
+          <p class="text-sm sm:text-base" style="color: var(--text-secondary);">
+            Grouped by architectural domain across back-end services, cross-platform front-end applications, database administration, and QA automation tools.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="surface-panel rounded-md p-5 sm:p-6">
+            <div class="flex items-center justify-between gap-2 pb-3 mb-4 border-b" style="border-color: var(--border-subtle);">
+              <h3 class="font-semibold text-base">Programming Languages &amp; Back-End</h3>
+              <span class="font-mono-tech text-xs" style="color: var(--accent-primary);">LAYER 01</span>
+            </div>
+            <p class="text-sm mb-4" style="color: var(--text-secondary);">
+              RESTful API architecture, enterprise business logic modeling, and relational SQL query design.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag font-mono-tech">PHP (Laravel)</span>
+              <span class="tech-tag font-mono-tech">Go</span>
+              <span class="tech-tag font-mono-tech">Python (FastAPI)</span>
+              <span class="tech-tag font-mono-tech">JavaScript</span>
+              <span class="tech-tag font-mono-tech">TypeScript</span>
+              <span class="tech-tag font-mono-tech">SQL</span>
+              <span class="tech-tag font-mono-tech">HTML</span>
+              <span class="tech-tag font-mono-tech">CSS</span>
+            </div>
+          </div>
+
+          <div class="surface-panel rounded-md p-5 sm:p-6">
+            <div class="flex items-center justify-between gap-2 pb-3 mb-4 border-b" style="border-color: var(--border-subtle);">
+              <h3 class="font-semibold text-base">Front-End &amp; Hybrid Mobile</h3>
+              <span class="font-mono-tech text-xs" style="color: var(--accent-primary);">LAYER 02</span>
+            </div>
+            <p class="text-sm mb-4" style="color: var(--text-secondary);">
+              Responsive web dashboards and cross-platform hybrid mobile/web applications managed from a unified shared codebase.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag font-mono-tech">Angular</span>
+              <span class="tech-tag font-mono-tech">Ionic</span>
+              <span class="tech-tag font-mono-tech">Vue.js</span>
+              <span class="tech-tag font-mono-tech">Tailwind CSS</span>
+              <span class="tech-tag font-mono-tech">Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="surface-panel rounded-md p-5 sm:p-6">
+            <div class="flex items-center justify-between gap-2 pb-3 mb-4 border-b" style="border-color: var(--border-subtle);">
+              <h3 class="font-semibold text-base">Databases &amp; Server Infrastructure</h3>
+              <span class="font-mono-tech text-xs" style="color: var(--accent-primary);">LAYER 03</span>
+            </div>
+            <p class="text-sm mb-4" style="color: var(--text-secondary);">
+              Autonomous full-stack deployments, Nginx reverse proxy configuration, containerization, and scheduled database integrity checks.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag font-mono-tech">PostgreSQL</span>
+              <span class="tech-tag font-mono-tech">MySQL</span>
+              <span class="tech-tag font-mono-tech">Docker</span>
+              <span class="tech-tag font-mono-tech">Nginx (Reverse Proxy)</span>
+              <span class="tech-tag font-mono-tech">Git</span>
+            </div>
+          </div>
+
+          <div class="surface-panel rounded-md p-5 sm:p-6">
+            <div class="flex items-center justify-between gap-2 pb-3 mb-4 border-b" style="border-color: var(--border-subtle);">
+              <h3 class="font-semibold text-base">QA Auditing &amp; Device Automation</h3>
+              <span class="font-mono-tech text-xs" style="color: var(--accent-primary);">LAYER 04</span>
+            </div>
+            <p class="text-sm mb-4" style="color: var(--text-secondary);">
+              API endpoint verification, staging performance bottleneck analysis, application health monitoring, and Android device automation.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag font-mono-tech">Postman</span>
+              <span class="tech-tag font-mono-tech">ADB (Android Debug Bridge)</span>
+              <span class="tech-tag font-mono-tech">scrcpy</span>
+              <span class="tech-tag font-mono-tech">Android Studio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="py-12 sm:py-16 border-b" style="border-color: var(--border-subtle);">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-10">
+          <p class="font-mono-tech text-xs mb-2" style="color: var(--accent-primary);">[03 / EXPERIENCE CHANGELOG]</p>
+          <h2 class="section-title font-bold mb-2">Relevant Engineering Experience</h2>
+          <p class="text-sm sm:text-base" style="color: var(--text-secondary);">
+            Chronological record of software engineering, quality assurance, infrastructure management, and client web operations.
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <article class="surface-panel rounded-md p-5 sm:p-7">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8">
+              <div class="lg:col-span-4">
+                <p class="font-mono-tech text-xs mb-1" style="color: var(--accent-primary);">MAY 2022 - PRESENT</p>
+                <h3 class="text-lg font-bold">PT Solusi Intek Indonesia</h3>
+                <p class="text-sm font-medium mb-1" style="color: var(--text-secondary);">
+                  Software Engineer / Quality Assurance Engineer
+                </p>
+                <p class="font-mono-tech text-xs" style="color: var(--text-muted);">Bekasi, Indonesia</p>
+              </div>
+              <div class="lg:col-span-8">
+                <ul class="space-y-2.5 text-sm list-disc pl-5" style="color: var(--text-secondary);">
+                  <li>Maintain and scale enterprise back-end architectures, API integrations, and relational database models using the Laravel framework for primary internal corporate web applications.</li>
+                  <li>Engineer cross-platform hybrid mobile and web applications using Ionic and Angular, managing a unified shared codebase to maintain UI consistency and multi-platform compatibility.</li>
+                  <li>Orchestrate autonomous full-stack software deployments and infrastructure management using Nginx reverse proxies, environment tuning, and server configurations to maintain system performance.</li>
+                  <li>Execute continuous codebase refactoring, code reviews, and structured repository version control via Git to improve long-term software maintainability, modularity, and technical documentation quality.</li>
+                  <li>Conduct proactive application health monitoring, systematic performance auditing, and routine PostgreSQL/MySQL database optimization routines (backups and integrity checks) to protect system uptime and corporate data.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="surface-panel rounded-md p-5 sm:p-7">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8">
+              <div class="lg:col-span-4">
+                <p class="font-mono-tech text-xs mb-1" style="color: var(--text-muted);">APRIL 2021 - JUNE 2021</p>
+                <h3 class="text-lg font-bold">Adconomic Advertise</h3>
+                <p class="text-sm font-medium mb-1" style="color: var(--text-secondary);">
+                  Web Developer
+                </p>
+                <p class="font-mono-tech text-xs" style="color: var(--text-muted);">West Jakarta, Indonesia</p>
+              </div>
+              <div class="lg:col-span-8">
+                <ul class="space-y-2.5 text-sm list-disc pl-5" style="color: var(--text-secondary);">
+                  <li>Directed comprehensive technical maintenance, system administration, and dynamic content updates across multiple client WordPress ecosystems to support front-end user engagement and server uptime.</li>
+                  <li>Formulated and deployed multi-layered organic SEO strategies combining technical structural site optimization, keyword research, and metadata refinement to improve search engine indexing and organic acquisition.</li>
+                  <li>Generated detailed technical maintenance logs and analytical reports to quantify system performance metrics and provide operational transparency to external corporate clients.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="py-12 sm:py-16 border-b" style="border-color: var(--border-subtle);">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-8">
+          <p class="font-mono-tech text-xs mb-2" style="color: var(--accent-primary);">[04 / ACADEMIC &amp; VOCATIONAL RECORD]</p>
+          <h2 class="section-title font-bold">Education, Languages &amp; Interests</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+          <div class="lg:col-span-5 surface-panel rounded-md p-5 sm:p-6">
+            <p class="font-mono-tech text-xs mb-1" style="color: var(--accent-primary);">2022 - PRESENT · SOUTH JAKARTA, INDONESIA</p>
+            <h3 class="text-base sm:text-lg font-bold mb-1">Universitas Indraprasta PGRI</h3>
+            <p class="text-sm font-medium mb-3" style="color: var(--text-secondary);">
+              Bachelor of Science in Informatics Engineering
+            </p>
+            <dl class="space-y-2 text-xs sm:text-sm" style="color: var(--text-secondary);">
+              <div>
+                <dt class="font-mono-tech text-xs" style="color: var(--text-muted);">CONCENTRATIONS:</dt>
+                <dd>Web Development, Algorithm Optimization, UI/UX Design Systems.</dd>
+              </div>
+              <div>
+                <dt class="font-mono-tech text-xs" style="color: var(--text-muted);">RELEVANT COURSEWORK:</dt>
+                <dd>Advanced Back-end Development, Desktop Application Development, Data Structures, Algorithm Analysis.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="lg:col-span-4 surface-panel rounded-md p-5 sm:p-6">
+            <p class="font-mono-tech text-xs mb-1" style="color: var(--text-muted);">2019 - 2022 · EAST JAKARTA, INDONESIA</p>
+            <h3 class="text-base sm:text-lg font-bold mb-1">SMK Negeri 10 Jakarta</h3>
+            <p class="text-sm font-medium mb-3" style="color: var(--text-secondary);">
+              Vocational High School Diploma in Software Engineering
+            </p>
+            <dl class="space-y-2 text-xs sm:text-sm" style="color: var(--text-secondary);">
+              <div>
+                <dt class="font-mono-tech text-xs" style="color: var(--text-muted);">CONCENTRATIONS:</dt>
+                <dd>Project Management, Mobile Development, Front-end &amp; Back-end Engineering.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="lg:col-span-3 surface-panel rounded-md p-5 sm:p-6 flex flex-col justify-between">
+            <div>
+              <p class="font-mono-tech text-xs mb-2" style="color: var(--accent-primary);">LANGUAGES &amp; INTERESTS</p>
+              <div class="mb-4">
+                <p class="font-mono-tech text-xs mb-1" style="color: var(--text-muted);">LANGUAGES:</p>
+                <p class="text-sm" style="color: var(--text-secondary);">Native Indonesian Speaker, Basic in English.</p>
+              </div>
+              <div>
+                <p class="font-mono-tech text-xs mb-1" style="color: var(--text-muted);">TECHNICAL &amp; PERSONAL INTERESTS:</p>
+                <p class="text-sm" style="color: var(--text-secondary);">
+                  Artificial Intelligence, Mobile Device Automation (ADB/scrcpy), Server Infrastructure, Badminton.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="py-12 sm:py-16" style="background-color: var(--bg-elevated);">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="surface-panel rounded-md p-6 sm:p-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-7">
+            <p class="font-mono-tech text-xs mb-2" style="color: var(--accent-primary);">[05 / DIRECT CONTACT]</p>
+            <h2 class="section-title font-bold mb-3">Engineering Inquiries &amp; Collaboration</h2>
+            <p class="text-sm sm:text-base mb-6" style="color: var(--text-secondary);">
+              Available for Software Engineering (Laravel, Go, FastAPI, Ionic/Angular) and Quality Assurance Engineering roles or technical discussions based in Jakarta or remote.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3">
+              <a
+                href="mailto:wahyusnjy@gmail.com"
+                class="control-primary px-5 py-3 rounded text-sm inline-flex items-center justify-center"
+              >
+                Email Wahyu Sanjaya (wahyusnjy@gmail.com)
+              </a>
+              <button
+                type="button"
+                id="copy-email-btn"
+                class="control-interactive px-4 py-3 rounded font-mono-tech text-xs inline-flex items-center justify-center"
+              >
+                Copy Email Address
+              </button>
+              <a
+                href="tel:+6283805396427"
+                class="control-interactive px-4 py-3 rounded font-mono-tech text-xs inline-flex items-center justify-center"
+              >
+                +62 838-0539-6427
+              </a>
+            </div>
+            <p id="copy-feedback" role="status" aria-live="polite" class="hidden font-mono-tech text-xs mt-3" style="color: var(--accent-primary);"></p>
+          </div>
+
+          <div class="lg:col-span-5 lg:border-l lg:pl-8 space-y-3" style="border-color: var(--border-subtle);">
+            <p class="font-mono-tech text-xs" style="color: var(--text-muted);">VERIFIED LINKS &amp; RESUME:</p>
+            <ul class="space-y-2 font-mono-tech text-xs sm:text-sm">
+              <li>
+                <a href="https://github.com/wahyusnjy" target="_blank" rel="noopener noreferrer" class="inline-flex items-center min-h-[44px] underline" style="color: var(--text-primary);">
+                  github.com/wahyusnjy
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/wahyu-sanjaya-a747ba223" target="_blank" rel="noopener noreferrer" class="inline-flex items-center min-h-[44px] underline" style="color: var(--text-primary);">
+                  linkedin.com/in/wahyu-sanjaya-a747ba223
+                </a>
+              </li>
+              <li>
+                <a href="cv/Resume.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center min-h-[44px] underline" style="color: var(--accent-primary);">
+                  cv/Resume.pdf (Single Source of Truth)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 font-mono-tech text-xs" style="color: var(--text-muted);">
+        <p>Wahyu Sanjaya · Jakarta, Indonesia</p>
+      </div>
+    </div>
+  </footer>
+
+  <div
+    id="spec-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="spec-modal-title"
+    class="hidden fixed inset-0 z-50 flex items-center justify-center p-4"
+    style="background-color: rgba(15, 17, 21, 0.8);"
+  >
+    <div class="surface-panel rounded-md max-w-2xl w-full p-5 sm:p-7 max-h-[90vh] overflow-y-auto" style="border-color: var(--border-control);">
+      <div class="flex items-start justify-between gap-4 pb-4 mb-4 border-b" style="border-color: var(--border-subtle);">
+        <h3 id="spec-modal-title" class="font-bold text-base sm:text-lg">Project Specification</h3>
+        <button
+          type="button"
+          id="spec-modal-close"
+          class="control-interactive px-3 py-1.5 rounded font-mono-tech text-xs shrink-0"
+        >
+          Close [Esc]
+        </button>
+      </div>
+      <div id="spec-modal-body"></div>
+      <div class="mt-6 pt-4 border-t flex justify-end" style="border-color: var(--border-subtle);">
+        <button
+          type="button"
+          id="spec-modal-close-footer"
+          class="control-primary px-4 py-2.5 rounded text-sm"
+        >
+          Done Inspecting
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="lightbox-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="lightbox-caption"
+    class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6"
+    style="background-color: rgba(15, 17, 21, 0.92);"
+  >
+    <div class="surface-panel rounded-md max-w-5xl w-full p-4 sm:p-5 flex flex-col max-h-[95vh] overflow-y-auto" style="border-color: var(--border-control);">
+      <div class="flex items-center justify-between gap-4 pb-3 mb-3 border-b" style="border-color: var(--border-subtle);">
+        <p id="lightbox-caption" class="font-mono-tech text-xs truncate" style="color: var(--text-primary);"></p>
+        <button
+          type="button"
+          id="lightbox-close"
+          class="control-interactive px-3 py-1.5 rounded font-mono-tech text-xs shrink-0"
+        >
+          Close [Esc]
+        </button>
+      </div>
+      <div class="flex items-center justify-center overflow-hidden rounded" style="background-color: var(--bg-surface);">
+        <img
+          id="lightbox-img"
+          src=""
+          alt=""
+          class="max-h-[75vh] w-auto max-w-full object-contain rounded"
+        >
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
